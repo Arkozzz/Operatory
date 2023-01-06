@@ -84,13 +84,13 @@ class Payment: #class permetant de chiffrer et dechiffrer des informations banca
         mail_content = 'Thanks for your reservation of %s\nThe final order of %.2f€ have been successfully performed for the date of %s.\nMail adress saved : %s'%(title, price, concert_date, self.mail_adress)
         #sender_address   = 'concertcommand@laposte.net'
         #sender_address   = 'confirmconcert1@laposte.net'
-        sender_address   = 'noreply.operatory@gmail.com'
-        sender_password  = 'haabksyzwomynrmy'
+        sender_address   = SENDER MAIL HERE
+        sender_password  = PASSWORD MAIL HERE
         receiver_address = mail
 
         mail_subject = datetime.now().strftime('Concert confirmed the %d/%m/%Y at %H:%M:%S')
+        #MANUAL PARAMETERS OF MAIL
         smtp_host = "smtp.gmail.com"
-        #smtp_host = "smtp.laposte.net"
         smtp_port = 587
 
         #Setup the MIME
